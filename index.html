@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HydroSmart</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="logo-container">
+            <img src="img/logo-hydrosmart.png" alt="HydroSmart Logo" class="logo-img">
+        </div>
+        
+        <nav class="nav-links">
+            <a href="#home" data-i18n="nav_home">Inicio</a>
+            <a href="#" data-i18n="nav_benefits">Beneficios</a>
+            <a href="#" data-i18n="nav_features">Características</a>
+            <a href="#" data-i18n="nav_plans">Planes</a>
+            <a href="#" data-i18n="nav_about">Nosotros</a>
+            <a href="#" data-i18n="nav_faq">FAQ</a>
+        </nav>
+
+        <div class="nav-actions">
+            <button class="btn-primary" data-i18n="btn_start">Empezar Ahora</button>
+            <button id="lang-toggle" class="lang-btn" onclick="toggleLanguage()">ES</button>
+        </div>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title" data-i18n="hero_title">TRANSFORMANDO LA GESTIÓN DEL AGUA CON TECNOLOGÍA INTELIGENTE PARA UN IMPACTO SOSTENIBLE</h1>
+            <button class="btn-secondary" data-i18n="btn_optimize">OPTIMIZAR AHORA</button>
+        </div>
+    </section>
+
+    <script src="i18n.js"></script>
+</body>
+</html>
