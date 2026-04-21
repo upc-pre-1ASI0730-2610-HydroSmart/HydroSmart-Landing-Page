@@ -1,356 +1,179 @@
-@import url('https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600&display=swap');
 
 :root {
-    --primary-dark: #001529;
-    --primary-main: #031635;
-    --primary-hover: #06244f;
-    --accent-green: #4AB787;
-
-    --text-main: #1f3354;
-    --text-soft: #6f7782;
-    --text-muted: #8a929c;
-
-    --surface-section: #f5f5f5;
-    --surface-card: #ffffff;
-    --border-soft: rgba(3, 22, 53, 0.12);
-    --white: #ffffff;
+  --dark: #031635;
+  --green: #4AB787;
+  --text: #1f3354;
+  --soft: #6f7782;
+  --bg: #f5f5f5;
+  --white: #fff;
+  --border: rgba(3, 22, 53, 0.45);
 }
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-html {
-    scroll-behavior: smooth;
-    scroll-padding-top: 88px;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: 'Hind', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    -webkit-font-smoothing: antialiased;
-    background: #ffffff;
-    color: var(--text-main);
+  font-family: 'Hind', sans-serif;
+  background: #fff;
+  color: var(--text);
 }
 
 .pricing-section {
-    position: relative;
-    overflow: hidden;
-    padding: 4.8rem 5% 4.5rem;
-    background: var(--surface-section);
-    scroll-margin-top: 88px;
-}
-
-.pricing-header,
-.pricing-container {
-    position: relative;
-    z-index: 1;
-}
-
-.pricing-header {
-    text-align: center;
-    margin-bottom: 3.2rem;
+  padding: 4rem 5%;
+  background: var(--bg);
+  text-align: center;
 }
 
 .pricing-header h2 {
-    color: var(--primary-main);
-    font-size: clamp(2rem, 3vw, 2.8rem);
-    font-weight: 700;
-    line-height: 1.1;
-    margin-bottom: 0.45rem;
-    letter-spacing: -0.5px;
+  font-size: 2.4rem;
+  margin-bottom: 0.3rem;
 }
 
-.pricing-header .subtitle {
-    color: var(--text-soft);
-    font-size: clamp(1rem, 1.4vw, 1.1rem);
-    font-weight: 400;
+.subtitle {
+  color: var(--soft);
+  margin-bottom: 2.5rem;
 }
 
 .pricing-container {
-    max-width: 1120px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 2.8rem;
-    flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  gap: 2.2rem;
+  flex-wrap: wrap;
 }
 
 .plan-card {
-    position: relative;
-    width: 290px;
-    min-height: 440px;
-    background: var(--surface-card);
-    border-radius: 12px;
-    padding: 2rem 1.55rem 1.8rem;
-    border: 2px solid rgba(3, 22, 53, 0.9);
-    box-shadow: 0 6px 14px rgba(3, 22, 53, 0.08);
-    text-align: left;
-    transition:
-        transform 0.35s ease,
-        box-shadow 0.35s ease,
-        background-color 0.35s ease,
-        color 0.35s ease,
-        border-color 0.35s ease;
-    cursor: pointer;
+  position: relative;
+  width: 270px;
+  min-height: 420px;
+  padding: 3.5rem 1.2rem;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  background: var(--white);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: background .3s ease, color .3s ease, transform .3s ease, box-shadow .3s ease;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(3, 22, 53, 0.06);
 }
 
 .plan-card:hover {
-    transform: translateY(-8px);
-    background: var(--primary-main);
-    box-shadow: 0 16px 28px rgba(3, 22, 53, 0.16);
-    border-color: var(--primary-main);
-    z-index: 3;
+  transform: translateY(-6px);
+  background: var(--dark);
+  color: var(--white);
+  box-shadow: 0 10px 20px rgba(3, 22, 53, 0.12);
 }
 
 .plan-card h3 {
-    text-align: center;
-    color: var(--primary-main);
-    font-size: clamp(2rem, 2.3vw, 2.3rem);
-    font-weight: 700;
-    line-height: 1.05;
-    margin-bottom: 0.15rem;
-    transition: color 0.35s ease;
+  font-size: 1.9rem;
+  font-weight: 600;
+  margin-bottom: 2px;
 }
 
 .plan-type {
-    text-align: center;
-    color: var(--text-muted);
-    font-size: 0.88rem;
-    font-weight: 400;
-    margin-bottom: 0.55rem;
-    transition: color 0.35s ease;
+  font-size: 0.85rem;
+  color: var(--soft);
+  margin-bottom: 4px;
 }
 
 .price {
-    text-align: center;
-    color: var(--primary-main);
-    margin-bottom: 1.9rem;
-    transition: color 0.35s ease;
+  margin-bottom: 1.2rem;
 }
 
 .price strong {
-    font-size: 2.45rem;
-    font-weight: 600;
-    line-height: 1;
-}
-
-.price span {
-    font-size: 0.95rem;
-    font-weight: 400;
-    margin-left: 2px;
+  font-size: 2.1rem;
+  font-weight: 500;
 }
 
 .plan-card ul {
-    list-style: none;
-    margin-bottom: 0;
+  list-style: none;
+  text-align: left;
+  width: 100%;
+  margin-top: auto;
 }
 
-.plan-card ul li {
-    color: var(--text-soft);
-    font-size: 0.95rem;
-    font-weight: 400;
-    line-height: 1.65;
-    display: flex;
-    align-items: flex-start;
-    gap: 10px;
-    margin-bottom: 0.9rem;
-    transition: color 0.35s ease;
+.plan-card li {
+  font-size: 0.9rem;
+  margin-bottom: 0.7rem;
+  display: flex;
+  gap: 8px;
+  color: var(--soft);
+  line-height: 1.6;
 }
 
-.plan-card ul li::before {
-    content: "✓";
-    color: var(--primary-main);
-    font-weight: 600;
-    line-height: 1.2;
-    transition: color 0.35s ease;
+.plan-card li::before {
+  content: "✓";
+  color: inherit;
 }
 
-/* Hover general */
 .plan-card:hover h3,
 .plan-card:hover .plan-type,
 .plan-card:hover .price,
-.plan-card:hover ul li,
-.plan-card:hover ul li::before {
-    color: var(--white);
+.plan-card:hover li {
+  color: var(--white);
 }
 
-/* Tarjeta destacada inicial */
+/* Card destacada */
 .featured {
-    background: var(--primary-main);
-    border-color: var(--primary-main);
-    box-shadow: 0 16px 28px rgba(3, 22, 53, 0.14);
-    transform: translateY(-10px);
-    z-index: 2;
+  background: var(--dark);
+  color: var(--white);
 }
 
 .featured h3,
 .featured .plan-type,
 .featured .price,
-.featured ul li,
-.featured ul li::before {
-    color: var(--white);
-}
-
-.featured:hover {
-    transform: translateY(-14px);
-    background: var(--primary-main);
-    border-color: var(--primary-main);
+.featured li {
+  color: var(--white);
 }
 
 /* Badge */
 .badge {
-    position: absolute;
-    top: -14px;
-    left: 50%;
-    transform: translateX(-50%);
-    background: var(--accent-green);
-    color: var(--white);
-    font-size: 0.72rem;
-    font-weight: 600;
-    padding: 6px 18px;
-    border-radius: 999px;
-    text-transform: uppercase;
-    letter-spacing: 0.6px;
-    box-shadow: 0 8px 18px rgba(74, 183, 135, 0.22);
+  position: absolute;
+  top: -14px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--green);
+  color: var(--white);
+  font-size: 0.65rem;
+  font-weight: 600;
+  padding: 5px 14px;
+  border-radius: 999px;
+  white-space: nowrap;
 }
 
-/* Cuando se hace hover en las tarjetas laterales,
-   la del centro vuelve a verse blanca como las otras */
+/* Cuando haces hover en una lateral,
+   Pro vuelve a estilo claro, pero sin perder texto */
 .pricing-container:has(.plan-card:not(.featured):hover) .featured {
-    background: var(--surface-card);
-    border-color: rgba(3, 22, 53, 0.9);
-    box-shadow: 0 6px 14px rgba(3, 22, 53, 0.08);
-    transform: translateY(0);
-}
-
-.pricing-container:has(.plan-card:not(.featured):hover) .featured h3,
-.pricing-container:has(.plan-card:not(.featured):hover) .featured .plan-type,
-.pricing-container:has(.plan-card:not(.featured):hover) .featured .price,
-.pricing-container:has(.plan-card:not(.featured):hover) .featured ul li {
-    color: var(--text-soft);
+  background: var(--white);
+  color: var(--text);
+  border-color: var(--border);
+  box-shadow: 0 4px 10px rgba(3, 22, 53, 0.06);
 }
 
 .pricing-container:has(.plan-card:not(.featured):hover) .featured h3,
 .pricing-container:has(.plan-card:not(.featured):hover) .featured .price {
-    color: var(--primary-main);
+  color: var(--dark);
 }
 
-.pricing-container:has(.plan-card:not(.featured):hover) .featured .plan-type {
-    color: var(--text-muted);
+.pricing-container:has(.plan-card:not(.featured):hover) .featured .plan-type,
+.pricing-container:has(.plan-card:not(.featured):hover) .featured li {
+  color: var(--soft);
 }
 
-.pricing-container:has(.plan-card:not(.featured):hover) .featured ul li::before {
-    color: var(--primary-main);
-}
-
-/* Mantener la lateral hover por encima */
+/* Mantener la tarjeta lateral hover en azul */
 .pricing-container:has(.plan-card:not(.featured):hover) .plan-card:not(.featured):hover {
-    background: var(--primary-main);
-    border-color: var(--primary-main);
-    box-shadow: 0 16px 28px rgba(3, 22, 53, 0.16);
-    transform: translateY(-8px);
+  background: var(--dark);
+  color: var(--white);
 }
 
-/* Responsive */
-@media (max-width: 992px) {
-    .pricing-container {
-        gap: 1.6rem;
-    }
-
-    .plan-card,
-    .featured {
-        width: 100%;
-        max-width: 360px;
-        min-height: auto;
-        transform: none;
-    }
-
-    .featured:hover,
-    .plan-card:hover {
-        transform: translateY(-6px);
-    }
-
-    .pricing-container:has(.plan-card:not(.featured):hover) .featured {
-        transform: none;
-    }
+.pricing-container:has(.plan-card:not(.featured):hover) .plan-card:not(.featured):hover h3,
+.pricing-container:has(.plan-card:not(.featured):hover) .plan-card:not(.featured):hover .plan-type,
+.pricing-container:has(.plan-card:not(.featured):hover) .plan-card:not(.featured):hover .price,
+.pricing-container:has(.plan-card:not(.featured):hover) .plan-card:not(.featured):hover li {
+  color: var(--white);
 }
-
-@media (max-width: 576px) {
-    .pricing-section {
-        padding: 4rem 1.2rem 3.5rem;
-    }
-
-    .plan-card {
-        padding: 1.7rem 1.25rem 1.5rem;
-    }
-
-    .plan-card h3 {
-        font-size: 1.9rem;
-    }
-
-    .price strong {
-        font-size: 2.15rem;
-    }
-
-    .plan-card ul li {
-        font-size: 0.92rem;
-    }
-}
-
-.pricing-container {
-    display: flex;
-    align-items: stretch; /* clave */
-}
-
-.plan-card {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between; /* distribuye contenido */
-    width: 270px;
-    min-height: 420px;
-}
-
-.plan-card {
-    border: 1px solid rgba(3, 22, 53, 0.6);
-}
-
-.plan-card {
-    padding: 3.5rem 1.2rem;
-}
-.plan-card h3 {
-    font-weight: 600; /* antes 700 */
-    font-size: 1.9rem;
-}
-
-.price strong {
-    font-weight: 500;
-    font-size: 2.1rem;
-}
-
-.plan-card ul li {
-    font-size: 0.9rem;
-    font-weight: 400;
-}
-
-
-.plan-card {
-    box-shadow: 0 3px 8px rgba(3, 22, 53, 0.06);
-}
-
-.plan-card:hover {
-    box-shadow: 0 10px 18px rgba(3, 22, 53, 0.10);
-}
-
-.plan-card ul li::before {
-    font-size: 0.85rem;
-    font-weight: 500;
-}
-
-.badge {
-    font-size: 0.65rem;
-    padding: 4px 14px;
-}
-
