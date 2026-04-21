@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600&display=swap');
+
+:root {
+  --dark: #031635;
+  --green: #4AB787;
+  --text: #1f3354;
+  --soft: #6f7782;
+  --bg: #f5f5f5;
+  --white: #fff;
+  --border: rgba(3, 22, 53, 0.45);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Hind', sans-serif;
+  background: #fff;
+  color: var(--text);
+}
+
+.pricing-section {
+  padding: 4rem 5%;
+  background: var(--bg);
+  text-align: center;
+}
+
+.pricing-header h2 {
+  font-size: 2.4rem;
+  margin-bottom: 0.3rem;
+}
+
+.subtitle {
+  color: var(--soft);
+  margin-bottom: 2.5rem;
+}
+
+.pricing-container {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  gap: 2.2rem;
+  flex-wrap: wrap;
+}
+
+.plan-card {
+  position: relative;
+  width: 270px;
+  min-height: 420px;
+  padding: 3.5rem 1.2rem;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  background: var(--white);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: background .3s ease, color .3s ease, transform .3s ease, box-shadow .3s ease;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(3, 22, 53, 0.06);
+}
+
+.plan-card:hover {
+  transform: translateY(-6px);
+  background: var(--dark);
+  color: var(--white);
+  box-shadow: 0 10px 20px rgba(3, 22, 53, 0.12);
+}
+
+.plan-card h3 {
+  font-size: 1.9rem;
+  font-weight: 600;
+  margin-bottom: 2px;
+}
+
+.plan-type {
+  font-size: 0.85rem;
+  color: var(--soft);
+  margin-bottom: 4px;
+}
+
+.price {
+  margin-bottom: 1.2rem;
+}
+
+.price strong {
+  font-size: 2.1rem;
+  font-weight: 500;
+}
+
+.plan-card ul {
+  list-style: none;
+  text-align: left;
+  width: 100%;
+  margin-top: auto;
+}
+
+.plan-card li {
+  font-size: 0.9rem;
+  margin-bottom: 0.7rem;
+  display: flex;
+  gap: 8px;
+  color: var(--soft);
+  line-height: 1.6;
+}
+
+.plan-card li::before {
+  content: "✓";
+  color: inherit;
+}
+
+.plan-card:hover h3,
+.plan-card:hover .plan-type,
+.plan-card:hover .price,
+.plan-card:hover li {
+  color: var(--white);
+}
+
+/* Card destacada */
+.featured {
+  background: var(--dark);
+  color: var(--white);
+}
+
+.featured h3,
+.featured .plan-type,
+.featured .price,
+.featured li {
+  color: var(--white);
+}
+
+/* Badge */
+.badge {
+  position: absolute;
+  top: -14px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--green);
+  color: var(--white);
+  font-size: 0.65rem;
+  font-weight: 600;
+  padding: 5px 14px;
+  border-radius: 999px;
+  white-space: nowrap;
+}
+
+/* Cuando haces hover en una lateral,
+   Pro vuelve a estilo claro, pero sin perder texto */
+.pricing-container:has(.plan-card:not(.featured):hover) .featured {
+  background: var(--white);
+  color: var(--text);
+  border-color: var(--border);
+  box-shadow: 0 4px 10px rgba(3, 22, 53, 0.06);
+}
+
+.pricing-container:has(.plan-card:not(.featured):hover) .featured h3,
+.pricing-container:has(.plan-card:not(.featured):hover) .featured .price {
+  color: var(--dark);
+}
+
+.pricing-container:has(.plan-card:not(.featured):hover) .featured .plan-type,
+.pricing-container:has(.plan-card:not(.featured):hover) .featured li {
+  color: var(--soft);
+}
+
+/* Mantener la tarjeta lateral hover en azul */
+.pricing-container:has(.plan-card:not(.featured):hover) .plan-card:not(.featured):hover {
+  background: var(--dark);
+  color: var(--white);
+}
+
+.pricing-container:has(.plan-card:not(.featured):hover) .plan-card:not(.featured):hover h3,
+.pricing-container:has(.plan-card:not(.featured):hover) .plan-card:not(.featured):hover .plan-type,
+.pricing-container:has(.plan-card:not(.featured):hover) .plan-card:not(.featured):hover .price,
+.pricing-container:has(.plan-card:not(.featured):hover) .plan-card:not(.featured):hover li {
+  color: var(--white);
+}

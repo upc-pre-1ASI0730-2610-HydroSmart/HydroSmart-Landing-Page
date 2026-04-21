@@ -25,7 +25,39 @@ const resources = {
     benefit_5_text: "Accede a una interfaz simplificada y amigable que convierte datos complejos en acciones claras para optimizar tu operación diaria.",
     benefit_6_title: "Integración Ágil",
     benefit_6_text: "Nuestra tecnología se integra a tu infraestructura actual de forma rápida, permitiéndote expandir la red de control según tus necesidades.",
-    btn_plans: "VER PLANES"
+    btn_plans: "VER PLANES",
+    pricing_title: "Planes que Crecen con Usted",
+    pricing_subtitle: "Soluciones escalables para cada necesidad técnica",
+
+    plan_basic_title: "Básico",
+    plan_basic_type: "Plan Esencial",
+    plan_basic_period: "/mes",
+    plan_basic_1: "Visualización de consumo general",
+    plan_basic_2: "Historial básico diario y semanal",
+    plan_basic_3: "Alertas por consumo elevado",
+    plan_basic_4: "Consejos de ahorro",
+    plan_basic_5: "Interfaz simple e intuitiva",
+
+    plan_pro_badge: "RECOMENDADO",
+    plan_pro_title: "Pro",
+    plan_pro_type: "Plan Control",
+    plan_pro_period: "/mes",
+    plan_pro_1: "Monitoreo en tiempo real",
+    plan_pro_2: "Alertas por fugas o consumo inusual",
+    plan_pro_3: "Comparación entre periodos",
+    plan_pro_4: "Recordatorios personalizados",
+    plan_pro_5: "Mayor detalle del consumo",
+    plan_pro_6: "Notificaciones relevantes",
+
+    plan_smart_title: "Smart",
+    plan_smart_type: "Plan Premium",
+    plan_smart_period: "/mes",
+    plan_smart_1: "Integración con dispositivos inteligentes",
+    plan_smart_2: "Consumo por zonas del hogar",
+    plan_smart_3: "Reportes y proyecciones",
+    plan_smart_4: "Recomendaciones personalizadas",
+    plan_smart_5: "Cuenta compartida",
+    plan_smart_6: "Optimización automática"
   },
   en: {
     nav_home: "Home",
@@ -53,7 +85,41 @@ const resources = {
     benefit_5_text: "Access a simplified, friendly interface that turns complex data into clear actions to optimize your daily operation.",
     benefit_6_title: "Agile Integration",
     benefit_6_text: "Our technology integrates quickly with your current infrastructure, allowing you to expand the control network as needed.",
-    btn_plans: "VIEW PLANS"
+    btn_plans: "VIEW PLANS",
+    pricing_title: "Plans That Grow With You",
+    pricing_subtitle: "Scalable solutions for every technical need",
+
+    plan_basic_title: "Basic",
+    plan_basic_type: "Essential Plan",
+    plan_basic_period: "/month",
+    plan_basic_1: "General consumption overview",
+    plan_basic_2: "Basic daily and weekly history",
+    plan_basic_3: "High consumption alerts",
+    plan_basic_4: "Saving tips",
+    plan_basic_5: "Simple and intuitive interface",
+
+    plan_pro_badge: "RECOMMENDED",
+    plan_pro_title: "Pro",
+    plan_pro_type: "Control Plan",
+    plan_pro_period: "/month",
+    plan_pro_1: "Real-time monitoring",
+    plan_pro_2: "Leak or unusual consumption alerts",
+    plan_pro_3: "Period-to-period comparison",
+    plan_pro_4: "Personalized reminders",
+    plan_pro_5: "More detailed consumption insights",
+    plan_pro_6: "Relevant notifications",
+
+    plan_smart_title: "Smart",
+    plan_smart_type: "Premium Plan",
+    plan_smart_period: "/month",
+    plan_smart_1: "Smart device integration",
+    plan_smart_2: "Consumption by home zones",
+    plan_smart_3: "Reports and projections",
+    plan_smart_4: "Personalized recommendations",
+    plan_smart_5: "Shared account",
+    plan_smart_6: "Automatic optimization"
+
+    
   }
 };
 
