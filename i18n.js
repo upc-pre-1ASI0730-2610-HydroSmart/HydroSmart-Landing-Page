@@ -171,5 +171,5 @@ function toggleLanguage() {
   currentLang = currentLang === 'en' ? 'es' : 'en';
   applyTranslations();
 }
-
+//
 document.addEventListener("DOMContentLoaded", applyTranslations);
