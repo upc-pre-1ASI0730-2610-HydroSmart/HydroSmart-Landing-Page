@@ -1,0 +1,102 @@
+.team-section {
+    padding: 4rem 5%;
+    background: #f0f4f8;
+    text-align: center;
+}
+
+.team-header h2 {
+    font-size: 2.4rem;
+    font-weight: 800;
+    color: #031635;
+    margin-bottom: 0.3rem;
+}
+
+.team-header::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background: #4AB787;
+    margin: 0.5rem auto 2.5rem;
+}
+
+.team-container {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.team-card {
+    background: #fff;
+    border-radius: 12px;
+    padding: 1.5rem 1rem;
+    width: 180px;
+    box-shadow: 0 2px 10px rgba(3, 22, 53, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.team-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 20px rgba(3, 22, 53, 0.15);
+}
+
+.team-img {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: top;
+    margin-bottom: 1rem;
+}
+
+.team-card h3 {
+    font-size: 0.95rem;
+    font-weight: 700;
+    color: #031635;
+    margin-bottom: 0.3rem;
+}
+
+.team-role {
+    font-size: 0.82rem;
+    color: #4AB787;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.team-desc {
+    font-size: 0.8rem;
+    color: #666;
+    line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+    .team-container {
+        gap: 1rem;
+    }
+
+    .team-card {
+        width: 140px;
+        padding: 1.2rem 0.8rem;
+    }
+    .team-img {
+        width: 90px;
+        height: 90px;
+        border-radius: 100%;
+        object-fit: cover;
+        object-position: top;  /* agrega esto */
+        margin-bottom: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .team-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .team-card {
+        width: 100%;
+        max-width: 280px;
+    }
+}
