@@ -46,6 +46,7 @@
     height: 90px;
     border-radius: 50%;
     object-fit: cover;
+    object-position: top;
     margin-bottom: 1rem;
 }
 
@@ -78,10 +79,13 @@
         width: 140px;
         padding: 1.2rem 0.8rem;
     }
-
     .team-img {
-        width: 75px;
-        height: 75px;
+        width: 90px;
+        height: 90px;
+        border-radius: 100%;
+        object-fit: cover;
+        object-position: top;  /* agrega esto */
+        margin-bottom: 1rem;
     }
 }
 
