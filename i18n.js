@@ -185,7 +185,7 @@ const resources = {
   }
 };
 
-let currentLang = document.documentElement.lang === 'en' ? 'en' : 'es';
+let currentLang = document.documentElement.lang === 'es' ? 'es' : 'en';
 
 function applyTranslations() {
   document.querySelectorAll("[data-i18n]").forEach(element => {
