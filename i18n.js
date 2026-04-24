@@ -234,3 +234,5 @@ function toggleLanguage() {
 }
 
 document.addEventListener("DOMContentLoaded", applyTranslations);
+
+/*faq and footer done*/
