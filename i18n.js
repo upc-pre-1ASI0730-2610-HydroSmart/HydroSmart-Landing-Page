@@ -89,6 +89,22 @@ const resources = {
     team_5_name: "Keyner Hancco",
     team_5_role: "Fullstack developer",
     team_5_desc: "Full-stack enfocado en perfomance, APIs y automatizacion de infraestructura inteligente",
+    faq_title: "Preguntas Frecuentes",
+    faq_q1: "¿La app funciona en cualquier tipo de vivienda?",
+    faq_a1: "Sí, nuestra app está diseñada para funcionar en casas, departamentos y edificios comerciales de cualquier tamaño.",
+    faq_q2: "¿Puedo ver mi consumo en tiempo real?",
+    faq_a2: "Absolutamente. Con nuestros sensores inteligentes, visualizarás tu consumo actualizado cada minuto desde la app.",
+    faq_q3: "¿Qué pasa si consumo más de lo normal?",
+    faq_a3: "Recibirás alertas inmediatas cuando detectemos consumos anómalos. Nuestros algoritmos analizan tus patrones para identificar posibles problemas.",
+    faq_q4: "¿Puedo cambiar de plan?",
+    faq_a4: "Claro. Puedes cambiar entre planes en cualquier momento sin penalizaciones ni compromisos a largo plazo.",
+    footer_tagline: "Líderes en tecnología hídrica inteligente. Transformamos datos en impacto real para un futuro donde el agua sea gestionada con precisión y respeto.",
+    footer_explore: "Explorar",
+    footer_social: "Redes Sociales",
+    footer_privacy: "Privacy Policy",
+    footer_terms: "Terms of Service",
+    footer_contact: "Contact Support",
+    footer_copyright: "© 2026 HydroSmart Professional. All rights reserved.",
   },
   en: {
     nav_home: "Home",
@@ -181,11 +197,26 @@ const resources = {
     team_5_name: "Keyner Hancco",
     team_5_role: "Fullstack developer",
     team_5_desc: "Full-stack focused on performance, APIs and intelligent infrastructure automation",
-    
+    faq_title: "Frequently Asked Questions",
+    faq_q1: "Does the app work in any type of home?",
+    faq_a1: "Yes, our app is designed to work in homes, apartments, and commercial buildings of any size.",
+    faq_q2: "Can I see my consumption in real time?",
+    faq_a2: "Absolutely. With our smart sensors, you'll see your consumption updated every minute from the app.",
+    faq_q3: "What happens if I consume more than normal?",
+    faq_a3: "You'll receive immediate alerts when we detect unusual consumption. Our algorithms analyze your patterns to identify potential issues.",
+    faq_q4: "Can I change plans?",
+    faq_a4: "Of course. You can switch between plans at any time without penalties or long-term commitments.",
+    footer_tagline: "Leaders in intelligent water technology. We transform data into real impact for a future where water is managed with precision and respect.",
+    footer_explore: "Explore",
+    footer_social: "Social Networks",
+    footer_privacy: "Privacy Policy",
+    footer_terms: "Terms of Service",
+    footer_contact: "Contact Support",
+    footer_copyright: "© 2026 HydroSmart Professional. All rights reserved.",
   }
 };
 
-let currentLang = document.documentElement.lang === 'en' ? 'en' : 'es';
+let currentLang = document.documentElement.lang === 'es' ? 'es' : 'en';
 
 function applyTranslations() {
   document.querySelectorAll("[data-i18n]").forEach(element => {
@@ -203,3 +234,5 @@ function toggleLanguage() {
 }
 
 document.addEventListener("DOMContentLoaded", applyTranslations);
+
+/*faq and footer done*/
